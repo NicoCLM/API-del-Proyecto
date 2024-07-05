@@ -5,26 +5,34 @@
 
 package co.nico.app.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name ="persona")
 public class Persona {
 
+    @Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id_persona;
-	private String ciudad;
-	private String correo_electronico;
-	private String direccion;
-	private String identificacion;
-	private String nombre;
-	private String telefono;
 
-    public Persona(int id_persona, String ciudad, String correo_elecronico, String direccion, String identificacion, String nombre, String telefono ){
-        this.id_persona = id_persona;
-        this.ciudad = ciudad;
-        this.correo_electronico = correo_elecronico;
-        this.direccion = direccion;
-        this.identificacion = identificacion;
-        this.nombre = nombre;
-        this.telefono = telefono;
-    }
+	private String ciudad;
+
+    @Column(columnDefinition = "TEXT")
+	private String correo_electronico;
+
+    @Column(columnDefinition = "TEXT")
+	private String direccion;
+
+	private String identificacion;
+    
+	private String nombre;
+
+	private String telefono;
 
     public int getId_persona() {
         return id_persona;
