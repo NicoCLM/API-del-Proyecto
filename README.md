@@ -1,7 +1,17 @@
 API DEL PROYECTO
 
-NICOLAS CAMACHO LESMES 
-ANALISIS Y DESARROLLO DE SOFTWARE
-FICHA 2721538
+Aprendiz:
+Nicolas Camacho Lesmes
 
-GA7-220501096-AA5-EV03GA7-220501096-AA5-EV03
+
+Analisis y Desarrollo de Software
+Ficha 2721538
+
+
+Instructor:
+Sebastian Lopez
+
+
+Evidencia:
+GA7-220501096-AA5-EV03
+
