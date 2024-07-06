@@ -50,7 +50,7 @@ public class AppController {
     }
     
     @PutMapping("/{id}")
-    public Optional<Persona> actualizarPersonaPorId(@RequestBody Persona peticion, @PathVariable("id") Integer id){
+    public Persona actualizarPersonaPorId(@RequestBody Persona peticion, @PathVariable("id") Integer id){
         return this.personaService.actualizarPorId(peticion, id);
     }
 

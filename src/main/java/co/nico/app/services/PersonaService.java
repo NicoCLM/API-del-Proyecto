@@ -39,15 +39,17 @@ public class PersonaService {
 
 
     //Realiza una actualizacion a la persona con ell ID solicitado.
-    public Optional<Persona> actualizarPorId(Persona peticion, Integer id){
-        Optional<Persona> person = personRepo.findById(id);
+    public Persona actualizarPorId(Persona peticion, Integer id){
+        Persona person = personRepo.findById(id).get();
         
-        person.get().setCiudad(peticion.getCiudad());
-        person.get().setCorreo_electronico(peticion.getCorreo_electronico());
-        person.get().setDireccion(peticion.getDireccion());
-        person.get().setIdentificacion(peticion.getIdentificacion());
-        person.get().setNombre(peticion.getNombre());
-        person.get().setTelefono(peticion.getTelefono());
+        person.setCiudad(peticion.getCiudad());
+        person.setCorreo_electronico(peticion.getCorreo_electronico());
+        person.setDireccion(peticion.getDireccion());
+        person.setIdentificacion(peticion.getIdentificacion());
+        person.setNombre(peticion.getNombre());
+        person.setTelefono(peticion.getTelefono());
+
+        personRepo.save(person);
 
         return person;
     }
