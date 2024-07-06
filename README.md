@@ -19,6 +19,12 @@ Estructura del proyecto hecho en Java con framework Spring:
 
 
 
+Para correr el proyecto, es necesario tener [XAMPP(https://www.apachefriends.org/es/download.html)].
+![image](https://github.com/NicoCLM/API-del-Proyecto/assets/69492496/0eddea8d-40ae-4377-bdc7-1203effa64af)
+
+
+La herramienta utilizada para probar las funciones es [POSTMAN(https://www.postman.com/downloads/)].
+
 Ejemplos de las Funciones:
 
 Crear
