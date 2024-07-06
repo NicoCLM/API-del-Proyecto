@@ -12,7 +12,9 @@ GA7-220501096-AA5-EV03
 
 
 
-Estructura del proyecto hecho en Java con framework Spring
+Estructura del proyecto hecho en Java con framework Spring:
+
+
 ![Estructura Java en Spring](https://github.com/NicoCLM/API-del-Proyecto/assets/69492496/9d3b662e-747e-4c86-8ad3-80e73fb10b29)
 
 
